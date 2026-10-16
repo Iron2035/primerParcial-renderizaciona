@@ -1,0 +1,158 @@
+:root{
+    --color-primario: darkslateblue;
+    --gris-oscuro: #dddddd;
+    --gris-claro: #fbfbfb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #215259;
+    background-color: #ffffff;
+}
+
+header,
+footer {
+    padding: 16px 24px;
+    text-align: center;
+}
+
+header {
+    border-bottom: 1px solid var(--gris-oscuro);
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+footer {
+    border-top: 1px solid var(--gris-oscuro);
+    margin-top: 24px;
+}
+
+main {
+    padding: 24px;
+}
+
+#titulo-usuarios{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--gris-oscuro);
+    margin-top: 14px;
+}
+
+.controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.controles-sin-busqueda {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.filtros{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.filtros label{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: var(--color-primario);
+}
+
+.botones {
+    display: flex;
+    gap: 4px;
+}
+
+.botones button {
+    padding: 9px 12px;
+    border: 1px solid var(--color-primario);
+    background-color: #ffffff;
+    color: var(--color-primario);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.botones button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.barra-busqueda {
+    width: 300px;
+    padding: 8px 10px;
+    border: 1px solid var(--gris-oscuro);
+    font-size: 14px;
+}
+
+.barra-busqueda::placeholder {
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th,
+td {
+    padding: 8px 10px;
+    border: 1px solid var(--gris-oscuro);
+    text-align: left;
+}
+
+th {
+    font-weight: 600;
+}
+
+.col-check {
+    width: 38px;
+    text-align: center;
+}
+
+.col-imagen {
+    width: 64px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--gris-claro);
+}
+
+.icono-usuario {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--gris-oscuro);
+}
+
+.username {
+    color: var(--color-primario);
+}
